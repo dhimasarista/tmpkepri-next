@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, UserPlus, Flame, Compass } from "lucide-react";
+import { ChevronRight, UserPlus, Flame, Compass, Mail } from "lucide-react";
 
 export function HomeHero() {
   return (
@@ -73,47 +73,27 @@ export function HomeHero() {
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
                   href="/daftar"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-[#B91C1C] px-6 py-3.5 text-xs font-bold tracking-wider text-white uppercase shadow-lg transition hover:bg-[#991B1B] hover:shadow-red-950/50"
+                  className="inline-flex h-12 items-center justify-center gap-2.5 rounded-full bg-[#B91C1C] px-6 text-xs font-bold tracking-wider text-white uppercase shadow-lg transition hover:bg-[#991B1B] hover:shadow-red-950/50"
                 >
                   <UserPlus className="size-4 text-white" />
                   <span>Pendaftaran Anggota</span>
                 </Link>
 
                 <Link
-                  href="/profil"
-                  className="group inline-flex items-center gap-2.5 rounded-full border border-white/30 bg-white/15 px-5 py-3.5 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-xs transition hover:bg-white/25 hover:border-white/50"
+                  href="/kontak"
+                  className="inline-flex h-12 items-center justify-center gap-2.5 rounded-full border border-white/35 bg-white/15 px-6 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-xs transition hover:bg-white/25 hover:border-white/60"
                 >
-                  <span>Profil & Nilai Perjuangan</span>
-                  <div className="flex size-6 items-center justify-center rounded-full bg-white text-[#B91C1C] transition group-hover:translate-x-0.5">
-                    <ChevronRight className="size-3.5" />
-                  </div>
+                  <Mail className="size-4 text-white" />
+                  <span>Hubungi Kami</span>
                 </Link>
               </div>
             </div>
 
             {/* Right Column: Floating Modern Cards (Ouaken Inspired) */}
             <div className="flex flex-col gap-4">
-              {/* 1. Dual Top Cards (Fokus Kepri & Lencana TMP) */}
+              {/* 1. Dual Top Cards (Lencana TMP di Kiri, Prov. Kepri di Kanan) */}
               <div className="grid grid-cols-2 gap-4">
-                {/* Card Left: Wilayah Maritim Kepri */}
-                <div className="flex flex-col justify-between rounded-2xl border border-white/30 bg-white/95 p-4.5 text-neutral-900 shadow-xl backdrop-blur-md">
-                  <div>
-                    <div className="flex size-8 items-center justify-center rounded-lg bg-red-50 text-[#B91C1C]">
-                      <Compass className="size-4.5" />
-                    </div>
-                    <p className="mt-3 text-2xl font-black tracking-tight text-[#111827]">
-                      96% Laut
-                    </p>
-                    <p className="text-xs font-bold text-neutral-800">
-                      Wilayah Maritim Kepri
-                    </p>
-                  </div>
-                  <p className="mt-2 text-[10px] text-neutral-500 font-medium line-clamp-1">
-                    Bumi Segantang Lada &bull; Pemuda Bahari
-                  </p>
-                </div>
-
-                {/* Card Right: Single Official Emblem */}
+                {/* Card Left: Single Official Emblem (Logo TMP) */}
                 <div className="flex flex-col items-center justify-center rounded-2xl border border-white/30 bg-white/95 p-4.5 text-center text-neutral-900 shadow-xl backdrop-blur-md">
                   <div className="relative h-13 w-8 shrink-0">
                     <Image
@@ -129,6 +109,24 @@ export function HomeHero() {
                   </p>
                   <p className="mt-1 text-[9px] font-bold text-[#B91C1C] uppercase tracking-wider">
                     Sayap PDI Perjuangan
+                  </p>
+                </div>
+
+                {/* Card Right: Prov. Kepri */}
+                <div className="flex flex-col justify-between rounded-2xl border border-white/30 bg-white/95 p-4.5 text-neutral-900 shadow-xl backdrop-blur-md">
+                  <div>
+                    <div className="flex size-8 items-center justify-center rounded-lg bg-red-50 text-[#B91C1C]">
+                      <Compass className="size-4.5" />
+                    </div>
+                    <p className="mt-3 text-2xl font-black tracking-tight text-[#111827] leading-none">
+                      Prov. Kepri
+                    </p>
+                    <p className="mt-1.5 text-xs font-bold text-neutral-800">
+                      Bumi Segantang Lada
+                    </p>
+                  </div>
+                  <p className="mt-2 text-[10px] text-neutral-500 font-medium line-clamp-1">
+                    Wilayah Maritim Bahari
                   </p>
                 </div>
               </div>
@@ -150,10 +148,10 @@ export function HomeHero() {
                     </p>
                     <div className="mt-3.5">
                       <Link
-                        href="/program"
+                        href="/profil"
                         className="inline-flex items-center gap-1.5 rounded-full bg-neutral-900 px-3.5 py-1.5 text-[11px] font-semibold text-white transition hover:bg-neutral-800"
                       >
-                        <span>Lihat Program</span>
+                        <span>Lihat Profil</span>
                         <ChevronRight className="size-3" />
                       </Link>
                     </div>
