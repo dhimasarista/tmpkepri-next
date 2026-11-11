@@ -6,49 +6,53 @@ import { ChevronRight, UserPlus, Flame, Compass, Mail } from "lucide-react";
 
 export function HomeHero() {
   return (
-    <section className="relative overflow-hidden border-b border-neutral-200">
-      {/* 1. Breaking / Agenda Ticker (Centered) */}
-      <div className="border-b border-neutral-200 bg-neutral-50 px-4 py-2 sm:px-6">
-        <div className="container mx-auto flex max-w-6xl items-center justify-center gap-3 text-xs text-center">
-          <span className="shrink-0 rounded-xs bg-[#B91C1C] px-2.5 py-0.5 font-bold uppercase tracking-wider text-white">
+    <section className="relative isolate overflow-hidden border-b border-neutral-800 bg-neutral-950 text-white">
+      {/* Background Image across the entire hero section */}
+      <div className="absolute inset-0 -z-20">
+        <Image
+          src="/assets/hero-bg.jpg"
+          alt="Latar Belakang Bahari Maritim Kepulauan Riau"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
+
+      {/* Subtle Red Opacity Overlay (Nasionalis Merah) */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[#991B1B]/35 mix-blend-multiply"
+      />
+
+      {/* Directional Scrim: Deep dark on left for text legibility, transparent on right for imagery */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/70 to-black/35 lg:from-black/85 lg:via-black/55 lg:to-transparent"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-transparent to-black/30"
+      />
+
+      {/* 1. Breaking / Agenda Ticker (Blur Transparan Glassmorphism) */}
+      <div className="border-b border-white/15 bg-black/35 backdrop-blur-md px-4 py-2.5 sm:px-6">
+        <Link
+          href="/publikasi"
+          className="group container mx-auto flex max-w-6xl items-center justify-center gap-3 text-xs text-center transition hover:opacity-95"
+        >
+          <span className="shrink-0 rounded-xs bg-[#B91C1C] px-2.5 py-0.5 font-bold uppercase tracking-wider text-white shadow-xs transition group-hover:bg-[#991B1B]">
             WARTA UTAMA
           </span>
-          <div className="text-neutral-700">
+          <div className="text-white/95 transition group-hover:text-white">
             <span className="font-medium">
               Konsolidasi Pemuda Maritim DPD Taruna Merah Putih Provinsi Kepulauan Riau Resmi Digelar di Batam.
             </span>
           </div>
-        </div>
+        </Link>
       </div>
 
-      {/* 2. Main Hero Area with Photographic Background & Red Tint */}
-      <div className="relative isolate overflow-hidden bg-neutral-950 py-14 sm:py-18 lg:py-24 text-white">
-        {/* Background Image */}
-        <div className="absolute inset-0 -z-20">
-          <Image
-            src="/assets/hero-bg.jpg"
-            alt="Latar Belakang Bahari Maritim Kepulauan Riau"
-            fill
-            priority
-            className="object-cover object-center"
-          />
-        </div>
-
-        {/* Subtle Red Opacity Overlay (Nasionalis Merah) */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[#991B1B]/35 mix-blend-multiply"
-        />
-
-        {/* Directional Scrim: Deep dark on left for text legibility, transparent on right for imagery */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/70 to-black/35 lg:from-black/85 lg:via-black/55 lg:to-transparent"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-transparent to-black/30"
-        />
+      {/* 2. Main Hero Area */}
+      <div className="py-14 sm:py-18 lg:py-24">
 
         {/* Container Content */}
         <div className="container mx-auto max-w-6xl px-4 sm:px-6">
