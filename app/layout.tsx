@@ -23,8 +23,11 @@ export const metadata: Metadata = {
   description:
     "Situs Resmi DPD Taruna Merah Putih (TMP) Provinsi Kepulauan Riau. Sayap kepemudaan progresif berjiwa Pancasila, berdikari, dan bergotong-royong membangun Bumi Segantang Lada.",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: [
+      { url: "/logo-only.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/logo-only.svg",
+    apple: "/logo-only.svg",
   },
 };
 
