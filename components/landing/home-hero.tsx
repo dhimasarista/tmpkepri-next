@@ -55,14 +55,7 @@ export function HomeHero() {
           <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
             {/* Left Column: Editorial Statement & CTAs */}
             <div className="flex flex-col">
-              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-semibold text-white backdrop-blur-xs">
-                <span className="size-2 rounded-full bg-[#CA3234]" />
-                <span className="tracking-widest uppercase">
-                  Dewan Pimpinan Daerah TMP Kepri
-                </span>
-              </div>
-
-              <h1 className="mt-5 font-display text-3xl font-black leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.85rem]">
+              <h1 className="font-display text-3xl font-black leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.85rem]">
                 Menggalang Solidaritas Pemuda Maritim, Bergotong Royong Membangun
                 Kepulauan Riau
               </h1>
