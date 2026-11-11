@@ -278,14 +278,14 @@ export default function Home() {
                 royong.
               </p>
 
-              <div className="mt-4 border border-amber-300 bg-amber-50/90 p-3.5 text-xs text-amber-950">
-                <p className="font-bold text-amber-900">
+              <div className="mt-4 border border-red-800 bg-[#B91C1C] p-3.5 text-xs text-white shadow-xs">
+                <p className="font-bold uppercase tracking-wider text-white">
                   Ketentuan Keanggotaan & Kaderisasi:
                 </p>
-                <p className="mt-1 leading-relaxed text-amber-900/90">
-                  Pendaftaran ini adalah untuk menjadi <strong>Anggota Taruna Merah Putih</strong>.
-                  Sesuai ketentuan organisasi, untuk dapat menjadi <strong>Kader</strong>,
-                  setiap anggota wajib menjadi kader <strong>PDI Perjuangan</strong>.
+                <p className="mt-1 leading-relaxed text-white/95">
+                  Pendaftaran ini adalah untuk menjadi <strong className="font-extrabold text-white">Anggota Taruna Merah Putih</strong>.
+                  Sesuai ketentuan organisasi, untuk dapat menjadi <strong className="font-extrabold text-white">Kader</strong>,
+                  setiap anggota wajib menjadi kader <strong className="font-extrabold text-white">PDI Perjuangan</strong>.
                 </p>
               </div>
             </div>
