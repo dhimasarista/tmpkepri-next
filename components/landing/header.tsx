@@ -19,7 +19,7 @@ import { pageLinks } from "@/components/landing/nav-links";
 export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const isRedHeader = pathname === "/about";
+  const isRedHeader = pathname === "/profil";
 
   return (
     <header className="sticky top-0 z-50 w-full shadow-xs">

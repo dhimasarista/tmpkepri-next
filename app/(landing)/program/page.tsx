@@ -73,10 +73,10 @@ export default function ProgramPage() {
             Rencana Strategis Organisasi
           </span>
           <h1 className="mt-2 font-display text-3xl font-black text-[#111827] sm:text-4xl">
-            Program Kerja DPD Taruna Merah Putih Kepri
+            Program DPD Taruna Merah Putih Kepri
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-neutral-600 leading-relaxed">
-            Daftar program kerja nyata yang diamanatkan dalam Rapat Kerja Daerah
+            Daftar program nyata yang diamanatkan dalam Rapat Kerja Daerah
             guna menjawab kebutuhan riil generasi muda dan masyarakat maritim
             Kepulauan Riau.
           </p>

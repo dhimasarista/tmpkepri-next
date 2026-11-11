@@ -15,14 +15,14 @@ export default function ContactPage() {
       <section className="bg-neutral-50 py-12 sm:py-16 border-b border-neutral-200">
         <div className="container mx-auto max-w-5xl px-4 text-center sm:px-6">
           <span className="text-xs font-bold text-[#B91C1C] uppercase tracking-wider">
-            Layanan Komunikasi & Aspirasi
+            Layanan Komunikasi & Informasi
           </span>
           <h1 className="mt-2 font-display text-3xl font-black text-[#111827] sm:text-4xl">
-            Sekretariat DPD Taruna Merah Putih Kepri
+            Kontak DPD Taruna Merah Putih Kepri
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-neutral-600 leading-relaxed">
-            Pusat administrasi, koordinasi pengurus cabang, dan posko pengaduan
-            aspirasi masyarakat kepemudaan dan kemaritiman se-Kepulauan Riau.
+            Pusat komunikasi, layanan informasi, dan posko aspirasi masyarakat
+            kepemudaan dan kemaritiman se-Kepulauan Riau.
           </p>
         </div>
       </section>

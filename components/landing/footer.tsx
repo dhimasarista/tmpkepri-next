@@ -160,11 +160,11 @@ export function Footer() {
             KEPULAUAN RIAU. Hak cipta dilindungi undang-undang.
           </p>
           <div className="flex items-center gap-4 text-xs text-neutral-300">
-            <Link href="/about" className="hover:text-white">
+            <Link href="/profil" className="hover:text-white">
               Profil
             </Link>
             <span>&bull;</span>
-            <Link href="/contact" className="hover:text-white">
+            <Link href="/kontak" className="hover:text-white">
               Kontak
             </Link>
             <span>&bull;</span>

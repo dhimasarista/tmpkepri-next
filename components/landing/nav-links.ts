@@ -1,9 +1,9 @@
 export const pageLinks = [
   { name: "Beranda", href: "/" },
-  { name: "Profil Organisasi", href: "/about" },
-  { name: "Program Kerja", href: "/program" },
-  { name: "Warta & Berita", href: "/berita" },
-  { name: "Kontak & Sekretariat", href: "/contact" },
+  { name: "Profil", href: "/profil" },
+  { name: "Program", href: "/program" },
+  { name: "Publikasi", href: "/publikasi" },
+  { name: "Kontak", href: "/kontak" },
 ] as const;
 
 export const appLinks = [

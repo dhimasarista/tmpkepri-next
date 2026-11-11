@@ -80,7 +80,7 @@ export function HomeHero() {
                 </Link>
 
                 <Link
-                  href="/about"
+                  href="/profil"
                   className="group inline-flex items-center gap-2.5 rounded-full border border-white/30 bg-white/15 px-5 py-3.5 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-xs transition hover:bg-white/25 hover:border-white/50"
                 >
                   <span>Profil & Nilai Perjuangan</span>

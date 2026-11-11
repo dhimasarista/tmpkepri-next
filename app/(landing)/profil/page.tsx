@@ -306,7 +306,7 @@ export default function AboutPage() {
                 Pendaftaran Anggota
               </Link>
               <Link
-                href="/contact"
+                href="/kontak"
                 className="border border-neutral-300 px-5 py-2 text-xs font-bold uppercase text-[#111827] hover:border-[#B91C1C]"
               >
                 Hubungi Sekretariat
